@@ -14,3 +14,9 @@ Fstat <- round(summary(lm)$fstatistic[[1]], 2)
 table2 <- matrix(c(RSE,RR,Fstat), nrow=3, ncol=1)
 rownames(table2) <- c("Residual Std Error", "R Squared", "F statistic")
 colnames(table2) <- c( "Value")
+
+#histogram for tvs
+tvhist <- hist(data$TV, xlab="TV", main="Histogram of TVs")
+
+#histogram for sales
+saleshist <- hist(data$Sales, xlab="Sales", main="Histogram of Sales")
