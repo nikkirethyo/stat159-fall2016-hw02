@@ -15,8 +15,24 @@ table2 <- matrix(c(RSE,RR,Fstat), nrow=3, ncol=1)
 rownames(table2) <- c("Residual Std Error", "R Squared", "F statistic")
 colnames(table2) <- c( "Value")
 
-#histogram for tvs
-tvhist <- hist(data$TV, xlab="TV", main="Histogram of TVs")
+#create txt file of summary statistics 
+sink("/Users/nrethmeier/Documents/stat159/stat159-fall2016-hw02/data/eda-output.txt")
+print(table1)
+print(table2)
+sink()
 
-#histogram for sales
-saleshist <- hist(data$Sales, xlab="Sales", main="Histogram of Sales")
+#histogram for tvs, png and pdf 
+png("/Users/nrethmeier/Documents/stat159/stat159-fall2016-hw02/images/histogram-tv.png")
+hist(data$TV, xlab="TV", main="Histogram of TVs")
+dev.off()
+pdf("/Users/nrethmeier/Documents/stat159/stat159-fall2016-hw02/images/histogram-tv.pdf")
+hist(data$TV, xlab="TV", main="Histogram of TVs")
+dev.off()
+
+#histogram for sales, png and pdf
+png("/Users/nrethmeier/Documents/stat159/stat159-fall2016-hw02/images/histogram-sales.png")
+hist(data$Sales, xlab="Sales", main="Histogram of Sales")
+dev.off()
+pdf("/Users/nrethmeier/Documents/stat159/stat159-fall2016-hw02/images/histogram-sales.pdf")
+hist(data$Sales, xlab="Sales", main="Histogram of Sales")
+dev.off()
