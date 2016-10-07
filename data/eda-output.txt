@@ -1,0 +1,7 @@
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)     7.03       0.46   15.36        0
+TV              0.05       0.00   17.67        0
+                    Value
+Residual Std Error   3.26
+R Squared            0.61
+F statistic        312.14
