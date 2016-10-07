@@ -1,0 +1,15 @@
+#Abstract 
+
+This report will be reproducing a linear regression analysis found in the book, *An Introduction to Statistical Learning*, written by James,  Witten, Tibshiri, and Hastie. The main results can be found in Chapter 3, "Simple Linear Regression". 
+
+#Introduction 
+
+The purpose of this project is to gain insight as to how advertising budgets for a product affect sales of that product. Once we have examined the relationship between advertising and sales, we can create a model to predict the amount of sales based on various advertising budgets. We can use this relationship to optimize the amount of sales through advertising budget adjustments. 
+
+#Data 
+
+The Advertising data set we will be using from *An Introduction to Statistical Learning*, consists of the following variables: sales, TV, radio, and newspaper. The sales variable tells you the amount of sales, in thousands of units, for the product throughout 200 different markets. TV, radio, and newspaper variables represent the advertising budgets for each of these medias in the same 200 markets. Therefore, the inputs are the budgets and the output is the amount in sales resulting from the budgets. 
+
+#Methodology 
+
+
